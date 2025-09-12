@@ -10,12 +10,4 @@
         <maven.compiler.release>24</maven.compiler.release>
         <exec.mainClass>edu.miguelmassane.e.shop.EShop</exec.mainClass>
     </properties>
-    <dependencies>
-    <dependency> 
-     <groupId>org.projectlombok</groupId>
-     <artifactId>lombok</artifactId>
-     <optional>true</optional>
-     <version>1.18.40</version>
-    </dependency> 
-    </dependencies>
 </project>

@@ -8,18 +8,37 @@ package Produto;
  *
  * @author Java
  */
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-
 public class Produto {
+
+    public String getNome() {
+        return nome;
+    }
+
+    public int getPreco() {
+        return preco;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setPreco(int preco) {
+        this.preco = preco;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public Produto(String nome, int preco, String descricao) {
+        this.nome = nome;
+        this.preco = preco;
+        this.descricao = descricao;
+    }
    private String nome;
    private int preco;
    private String descricao;
