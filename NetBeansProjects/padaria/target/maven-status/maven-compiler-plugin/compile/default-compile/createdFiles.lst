@@ -1,4 +1,7 @@
 padaria\padaria\Interface\Principal.class
+padaria\padaria\Interface\ProdutoService.class
+padaria\padaria\Interface\ProdutoEnum$values.class
 padaria\padaria\Interface\Principal$1.class
-padaria\padaria\Interface\jComboBox2.class
+padaria\padaria\Interface\Principal$Produtos.class
+padaria\padaria\Interface\ProdutoEnum.class
 padaria\padaria\Produto.class

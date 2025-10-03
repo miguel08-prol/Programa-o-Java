@@ -15,18 +15,27 @@ public class Produto {
     private int preco;
     private String descricao;
 
-    public Produto(int codigo, int preco, String descricao) {
+    public Produto(int codigo, String descricao) {
         this.codigo = codigo;
         this.preco = preco;
         this.descricao = descricao;
     }
+
+    @Override
+    public String toString() {
+        return "Produto{" + "codigo=" + codigo + ", descricao=" + descricao + '}';
+    }
+
+    public Produto() {
+        
+    }
     
-    public int getcodigo() {
+    public int getCodigo() {
         return codigo;
     }
 
 
-    public void setcodigo(int codigo) {
+    public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
 
@@ -45,4 +54,5 @@ public class Produto {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
 }
