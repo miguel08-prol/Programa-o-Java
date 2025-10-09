@@ -172,7 +172,13 @@ public class Principal extends javax.swing.JFrame {
      pVenda.setQuantidade(Integer.parseInt(jSpinner1.getValue().toString()));
      pVenda.setTotal();
      ListaCarrinho.addElement(pVenda);
-     jTotal.setText("Total"); 
+     //exemplo: for(int i;i < 10;i++) for (variavelInicio;condicaoParada;Passo)
+     double total = 0;
+     for (int i = 0; i<ListaCarrinho.getSize(); i++) {
+     total +=ListaCarrinho.getElementAt(i).getTotal();
+     jTotal.setText("Total"+ total);
+     }
+     
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void bRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bRemoveActionPerformed
@@ -180,6 +186,7 @@ public class Principal extends javax.swing.JFrame {
         if(jList1.getSelectedIndex() >= 0) ListaCarrinho.removeElementAt(jList1.getSelectedIndex());
     }//GEN-LAST:event_bRemoveActionPerformed
 
+    
     private void jTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTotalActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTotalActionPerformed
@@ -230,11 +237,12 @@ public class Principal extends javax.swing.JFrame {
 
     private static class jList1 {
 
-        private static void setModel(DefaultListModel<produtoVenda> ListaCarrinho) {
+
+        private static int getSelectedIndex() {
             throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
         }
 
-        private static int getSelectedIndex() {
+        private static void setModel(DefaultListModel<produtoVenda> ListaCarrinho) {
             throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
         }
 

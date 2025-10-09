@@ -12,8 +12,11 @@ package padaria.padaria;
 public class Produto {
 
     private int codigo;
+
+
     private int preco;
     private String descricao;
+    private int saldoEstoque;
 
     public Produto(int codigo, String descricao) {
         this.codigo = codigo;
@@ -55,4 +58,11 @@ public class Produto {
         this.descricao = descricao;
     }
 
+       public int getSaldoEstoque() {
+        return saldoEstoque;
+    }
+
+    public void setSaldoEstoque(int saldoEstoque) {
+        this.saldoEstoque = saldoEstoque;
+    }
 }
