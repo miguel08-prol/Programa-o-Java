@@ -10,9 +10,9 @@ import padaria.padaria.Produto;
  *
  * @author Java
  */
-public class produtoVenda {
+public class ProdutoVenda {
 
-    public static List<produtoVenda> inicializarProdutoVenda() {
+    public static List<ProdutoVenda> inicializarProdutoVenda() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     private Produto produto;
