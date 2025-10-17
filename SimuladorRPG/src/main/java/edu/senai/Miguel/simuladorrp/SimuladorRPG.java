@@ -6,7 +6,9 @@ package edu.senai.Miguel.simuladorrp;
 
 import edu.senai.Miguel.simuladorrpg.model.Equipamento;
 import edu.senai.Miguel.simuladorrpg.model.Monstro;
-
+import edu.senai.Miguel.simuladorrpg.classes.jogador;
+import java.util.List;
+import edu.senai.Miguel.simuladorrpg.service.EquipamentoService;
 /**
  *
  * @author Guilherme
@@ -18,8 +20,12 @@ public class SimuladorRPG extends javax.swing.JFrame {
     /**
      * Creates new form Principal
      */
+    public jogador jogador;
+    public List<Equipamento> equipamento;
     public SimuladorRPG() {
-        initComponents();
+    jogador = new jogador();
+    jogador.setNivel(1);
+    equipamento = EquipamentoService.obterEquipamento();
         
                 // Pega um monstro específico do enum
         Monstro monstroDaVez = Monstro.ORC_DE_TELEMARKETING;

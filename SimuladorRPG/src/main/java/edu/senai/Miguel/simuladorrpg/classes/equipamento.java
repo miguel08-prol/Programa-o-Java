@@ -11,9 +11,34 @@ import edu.senai.Miguel.simuladorrpg.model.TipoEquipamento;
  * @author Java
  */
 public class equipamento {
+private String nome;
+private int bonus;
+private TipoEquipamento tipo;
 
-    TipoEquipamento getTipo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getNome() {
+        return nome;
     }
-    
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getBonus() {
+        return bonus;
+    }
+
+    public void setBonus(int bonus) {
+        this.bonus = bonus;
+    }
+
+    public TipoEquipamento getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(TipoEquipamento tipo) {
+        this.tipo = tipo;
+    }
+
+
+
 }

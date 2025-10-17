@@ -5,7 +5,7 @@
 package edu.senai.Miguel.simuladorrpg.classes;
 
 import edu.senai.Miguel.simuladorrpg.model.TipoEquipamento;
-
+import java.util.List;
 
 
 /**
