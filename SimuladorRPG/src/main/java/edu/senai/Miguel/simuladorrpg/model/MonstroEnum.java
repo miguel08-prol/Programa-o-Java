@@ -4,7 +4,7 @@ package edu.senai.Miguel.simuladorrpg.model;
  * Enum que representa os monstros encontrados no jogo,
  * cada um com seu nome característico e nível de combate.
  */
-public enum Monstro {
+public enum MonstroEnum {
     GOBLIN_ESTAGIARIO("Goblin Estagiário", 1),
     PATO_DO_APOCALIPSE("Pato do Apocalipse", 1),
     PLANTA_DE_VASO_CARNIVORA("Planta de Vaso Carnívora", 2),
@@ -39,7 +39,7 @@ public enum Monstro {
     private final String nome;
     private final int nivel;
 
-    Monstro(String nome, int nivel) {
+    MonstroEnum(String nome, int nivel) {
         this.nome = nome;
         this.nivel = nivel;
     }

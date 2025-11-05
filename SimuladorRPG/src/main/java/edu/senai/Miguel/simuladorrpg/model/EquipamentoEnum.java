@@ -4,7 +4,7 @@ package edu.senai.Miguel.simuladorrpg.model;
  * Enum que representa os diversos itens de equipamento do jogo,
  * cada um com um nome, um bônus de combate e o tipo de equipamento.
  */
-public enum Equipamento {
+public enum EquipamentoEnum {
     // Cabeçais
     ELMO_DA_IGNORANCIA_GLORIOSA("Elmo da Ignorância Gloriosa", 1, TipoEquipamento.CABECAL),
     CHAPEU_PONTUDO_DE_TRES_PONTAS("Chapéu Pontudo de Três Pontas", 2, TipoEquipamento.CABECAL),
@@ -43,7 +43,7 @@ public enum Equipamento {
     private final int bonus;
     private final TipoEquipamento tipo;
 
-    Equipamento(String nome, int bonus, TipoEquipamento tipo) {
+    EquipamentoEnum(String nome, int bonus, TipoEquipamento tipo) {
         this.nome = nome;
         this.bonus = bonus;
         this.tipo = tipo;
@@ -59,17 +59,5 @@ public enum Equipamento {
 
     public TipoEquipamento getTipo() {
         return tipo;
-    }
-
-    public void setNome(String nome) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void setBonus(int bonus) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void setTipo(TipoEquipamento tipo) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

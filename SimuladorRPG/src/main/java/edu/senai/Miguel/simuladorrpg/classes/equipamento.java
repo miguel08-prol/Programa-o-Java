@@ -1,20 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package edu.senai.Miguel.simuladorrpg.classes;
 
 import edu.senai.Miguel.simuladorrpg.model.TipoEquipamento;
 
-/**
- *
- * @author Java
- */
-public class equipamento {
-private String nome;
-private int bonus;
-private TipoEquipamento tipo;
+public class Equipamento {
 
+    private String nome;
+    private int bonus;
+    private TipoEquipamento tipo;
+    
     public String getNome() {
         return nome;
     }
@@ -38,7 +31,6 @@ private TipoEquipamento tipo;
     public void setTipo(TipoEquipamento tipo) {
         this.tipo = tipo;
     }
-
-
+    
 
 }
