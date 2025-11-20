@@ -1,0 +1,35 @@
+plugins {
+  id 'java'
+  id 'application'
+}
+
+group = 'senai.miguelmassane.jogo'
+version = '1.0.0'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  // Dependências do Java Swing já estão incluídas no JDK
+}
+
+application {
+  mainClass = 'senai.miguelmassane.jogo.Main'
+}
+
+sourceSets {
+  main {
+    java {
+      srcDirs = ['src/main/java']
+    }
+    resources {
+      srcDirs = ['assets']
+    }
+  }
+}
+
+java {
+  sourceCompatibility = JavaVersion.VERSION_11
+  targetCompatibility = JavaVersion.VERSION_11
+}
